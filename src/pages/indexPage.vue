@@ -4,8 +4,8 @@
             <q-input filled v-model="name" label="Your name *" hint="Name and surname" lazy-rules
                 :rules="[val => val && val.length > 0 || 'Please type something']" />
             <q-input filled type="number" v-model="age" label="Your age *" lazy-rules :rules="[
-                val => val !== null && val !== '' || 'กรุณากรอกอายุ',
-                val => val > 18 && val < 100 || 'นะจ๊ะะ  กรุณากรอกอายุจริง'
+                val => val !== null && val !== '' || 'กรุณากรอกอายุ. นะครับ',
+                val => val > 18 && val < 100 || ' กรุณากรอกอายุจริง'
             ]" />
             <q-toggle v-model="accept" label="I accept the license and terms" />
             <div>
